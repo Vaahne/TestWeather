@@ -1,0 +1,34 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-image: url('../images/background.png');
+}
+#weatherData{
+    text-align: center;
+}
+#currentWeather{
+    display: flex;
+    justify-content: center;
+}
+.apiName{
+    font-size: 4em;
+    font-weight: bolder;
+    color:#838336;
+    text-align: center;
+}
+
+#formId{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 24rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+.pagination{
+    justify-content: center;
+}
+#choices{
+    display: grid;
+    
+}
