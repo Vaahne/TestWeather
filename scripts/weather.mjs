@@ -13,7 +13,7 @@ formEle.addEventListener('submit',async(e) => {
     try{
         display.textContent = "";
         const zipCode = Number(zip.value);
-        const currentWeather = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=${KEY}&q=${zipCode}&days=7`);
+        const currentWeather = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${KEY}&q=${zipCode}&days=7`);
         
         if(!currentWeather.ok){
             alert("Invalid Zip code");
@@ -25,7 +25,7 @@ formEle.addEventListener('submit',async(e) => {
 
         setData(weekData);
 
-        console.log(weekData);  // weekData[0].day.condition.text or .icon        
+        console.log(weekData);  
 
         displayPage(1);
         setupPagination();
